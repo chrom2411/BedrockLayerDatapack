@@ -12,6 +12,6 @@ execute as @a unless score @s BRL_NetherLower matches 0.. unless score @s BRL_Ne
 
 execute as @a[scores={BedrockLayer=1..}] at @s run function bedrocklayer:option/main
 
-execute as @a[scores={BRL_Overworld=1},nbt={Dimension:0}] at @s run function bedrocklayer:flatten/overworld
-execute as @a[scores={BRL_NetherUpper=1},nbt={Dimension:-1}] at @s run function bedrocklayer:flatten/nether_upper
-execute as @a[scores={BRL_NetherLower=1},nbt={Dimension:-1}] at @s run function bedrocklayer:flatten/nether_lower
+execute as @a[scores={BRL_Overworld=1},nbt={Dimension:0}] at @s run fill ~-7 4 ~-7 ~7 1 ~7 minecraft:stone replace minecraft:bedrock
+execute as @a[scores={BRL_NetherUpper=1},nbt={Dimension:-1}] at @s run fill ~-7 123 ~-7 ~7 126 ~7 minecraft:netherrack replace minecraft:bedrock
+execute as @a[scores={BRL_NetherLower=1},nbt={Dimension:-1}] at @s run fill ~-7 4 ~-7 ~7 1 ~7 minecraft:netherrack replace minecraft:bedrock
